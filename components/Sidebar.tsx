@@ -4,16 +4,13 @@ import {
     Accordion,
     AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-<<<<<<< HEAD
-    Binary, Braces, Briefcase, CaseUpper, Clock, Code2, Fingerprint, GraduationCap, Menu, Moon, Percent, SearchCode, Settings2, ShieldCheck, Sun, TrendingUp, Type, X
-=======
-    Binary, Braces, Briefcase, CaseUpper, Clock, Code2, Fingerprint, GraduationCap, Menu, Moon, Percent, SearchCode, Settings2, ShieldCheck, Sun, Timer, TrendingUp, Type, X
->>>>>>> 140cd6d (Initial commit after restoring repo)
-} from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
 import { usePathname, useRouter } from "next/navigation";
+
+import {
+    Binary, Braces, Briefcase, CaseUpper, Clock, Code2, Fingerprint, GraduationCap, Menu, Moon, Percent, SearchCode, Settings2, ShieldCheck, Sun, Timer, TrendingUp, Type, X
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Sidebar = () => {
@@ -39,6 +36,7 @@ const Sidebar = () => {
                 { title: "Hash Generator", link: "/developer/hash-generator", icon: <Fingerprint size={18} /> },
                 { title: "JWT Decoder", link: "/developer/jwt-decoder", icon: <ShieldCheck size={18} /> },
                 { title: "Timestamp", link: "/developer/timestamp-converter", icon: <Clock size={18} /> },
+                { title: "Shape", link: "/developer/shape", icon: <Clock size={18} /> },
             ]
         },
         {
@@ -58,10 +56,8 @@ const Sidebar = () => {
             icon: <GraduationCap size={18} />,
             tools: [
                 { title: "GPA Calc", link: "/gpa", icon: <GraduationCap size={18} /> },
-<<<<<<< HEAD
-=======
                 { title: "Study Timer", link: "/student/pomodoro", icon: <Timer size={18} /> },
->>>>>>> 140cd6d (Initial commit after restoring repo)
+
             ]
         }
     ];

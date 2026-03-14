@@ -15,6 +15,7 @@ import {
   SearchCode,
   ShieldCheck,
   Sparkles,
+  Timer,
   TrendingUp,
   Type
 } from "lucide-react";
@@ -55,6 +56,7 @@ const Dashboard = () => {
       icon: <GraduationCap className="text-indigo-500" size={20} />,
       tools: [
         { title: "GPA Calculator", desc: "Grade point average math", link: "/gpa", icon: <GraduationCap size={20} />, color: "bg-indigo-50 dark:bg-indigo-950/30 text-indigo-600" },
+        { title: "Pomodoro", desc: "Track your time with pomodoro", link: "/gpa", icon: <Timer size={20} />, color: "bg-amber-50 dark:bg-amber-950/30 text-amber-600" },
       ]
     }
   ];
