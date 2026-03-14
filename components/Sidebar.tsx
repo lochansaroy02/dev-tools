@@ -55,7 +55,7 @@ const Sidebar = () => {
             title: "Student",
             icon: <GraduationCap size={18} />,
             tools: [
-                { title: "GPA Calc", link: "/gpa", icon: <GraduationCap size={18} /> },
+                { title: "GPA Calc", link: "/student/gpa", icon: <GraduationCap size={18} /> },
                 { title: "Study Timer", link: "/student/pomodoro", icon: <Timer size={18} /> },
 
             ]
