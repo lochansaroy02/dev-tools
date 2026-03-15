@@ -8,8 +8,12 @@ import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
 import { usePathname, useRouter } from "next/navigation";
 
+import { setup } from "@/utils/category";
 import {
-    Binary, Braces, Briefcase, CaseUpper, Clock, Code2, Fingerprint, GraduationCap, Menu, Moon, Percent, SearchCode, Settings2, ShieldCheck, Sun, Timer, TrendingUp, Type, X
+    Menu, Moon,
+    SearchCode, Settings2,
+    Sun,
+    X
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -22,45 +26,7 @@ const Sidebar = () => {
 
     // 1. Logic to find which category should be open based on current URL
     const activeCategory = useRef<string>("");
-
-    const categories = [
-        {
-            id: "dev-tools",
-            title: "Dev Tools",
-            icon: <Code2 size={18} />,
-            tools: [
-                { title: "Word Counter", link: "/developer/word-counter", icon: <Type size={18} /> },
-                { title: "Case Converter", link: "/developer/case-converter", icon: <CaseUpper size={18} /> },
-                { title: "Base Converter", link: "/developer/base-converter", icon: <Binary size={18} /> },
-                { title: "JSON Formatter", link: "/developer/json-formatter", icon: <Braces size={18} /> },
-                { title: "Hash Generator", link: "/developer/hash-generator", icon: <Fingerprint size={18} /> },
-                { title: "JWT Decoder", link: "/developer/jwt-decoder", icon: <ShieldCheck size={18} /> },
-                { title: "Timestamp", link: "/developer/timestamp-converter", icon: <Clock size={18} /> },
-                { title: "Shape", link: "/developer/shape", icon: <Clock size={18} /> },
-            ]
-        },
-        {
-            id: "business",
-            title: "Business",
-            icon: <Briefcase size={18} />,
-            tools: [
-                { title: "GST Calculator", link: "/business/gst", icon: <Briefcase size={18} /> },
-                { title: "EMI Calculator", link: "/business/emi-calc", icon: <Percent size={18} /> },
-                { title: "ROI Calculator", link: "/business/roi-calc", icon: <TrendingUp size={18} /> },
-                { title: "SIP Calculator", link: "/business/sip-calc", icon: <TrendingUp size={18} /> },
-            ]
-        },
-        {
-            id: "student",
-            title: "Student",
-            icon: <GraduationCap size={18} />,
-            tools: [
-                { title: "GPA Calc", link: "/student/gpa", icon: <GraduationCap size={18} /> },
-                { title: "Study Timer", link: "/student/pomodoro", icon: <Timer size={18} /> },
-
-            ]
-        }
-    ];
+    let categories = setup
 
     // Find active category ID
     categories.forEach(cat => {
@@ -138,6 +104,9 @@ const Sidebar = () => {
                                                 : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 hover:bg-zinc-50 dark:hover:bg-zinc-900/50"
                                                 }`}
                                         >
+                                            <span className="text-xs">
+                                                {link.icon}
+                                            </span>
                                             {link.title}
                                         </button>
                                     );

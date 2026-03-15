@@ -221,8 +221,8 @@ export default function MaterialShapeEditor() {
                         </button>
                     ))}
                 </div>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-zinc-50 dark:from-zinc-950 to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-zinc-50 dark:from-zinc-950 to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-zinc-50 dark:from-zinc-950 to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-zinc-50 dark:from-zinc-950 to-transparent" />
                 <button onClick={() => scroll('left')} className="absolute left-1 top-1/2 -translate-y-1/2 p-1.5 rounded-full border border-zinc-200 bg-white shadow-md dark:border-zinc-800 dark:bg-zinc-950 text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity"><ChevronLeft size={16} /></button>
                 <button onClick={() => scroll('right')} className="absolute right-1 top-1/2 -translate-y-1/2 p-1.5 rounded-full border border-zinc-200 bg-white shadow-md dark:border-zinc-800 dark:bg-zinc-950 text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity"><ChevronRight size={16} /></button>
             </div>
