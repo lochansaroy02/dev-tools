@@ -171,7 +171,7 @@ export default function Dashboard() {
         </motion.div>
 
         <h1 className="text-5xl md:text-6xl font-black tracking-tight text-zinc-900 dark:text-zinc-50">
-          Simplify your <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-500 to-zinc-800 dark:from-zinc-200 dark:to-zinc-500">workflow.</span>
+          Simplify your <span className="text-transparent bg-clip-text bg-linear-to-r from-zinc-500 to-zinc-800 dark:from-zinc-200 dark:to-zinc-500">workflow.</span>
         </h1>
 
         <p className="text-lg text-zinc-500 dark:text-zinc-400">

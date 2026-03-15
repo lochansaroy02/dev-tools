@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion"; // Note: Updated to framer-motion based on standard usage, adjust if your alias is motion/react
 import {
     ChevronLeft, ChevronRight,
     Copy,
@@ -11,6 +10,7 @@ import {
     Ruler,
     Shapes
 } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useRef, useState } from 'react';
 
 // Point and Vector math logic
