@@ -54,7 +54,6 @@ export const setup = [
             { title: "Unit Converter", link: "/converter/unit", icon: <Ruler size={18} /> },
             { title: "Timezone Converter", link: "/converter/timezone", icon: <Clock size={18} /> },
             { title: "Date Difference", link: "/converter/date-diff", icon: <Calendar size={18} /> },
-            { title: "Binary to Decimal", link: "/converter/binary-decimal", icon: <Binary size={18} /> }
         ]
     },
 
