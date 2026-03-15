@@ -221,9 +221,9 @@ export default function ApiTester() {
         onAdd: () => void,
         onRemove: (id: string) => void
     ) => (
-        <div className="space-y-2">
+        <div className="space-y-z">
             {items.map((item) => (
-                <div key={item.id} className="flex items-center gap-2">
+                <div key={item.id} className="flex items-center  space-y-2 gap-1">
                     <input
                         type="checkbox"
                         checked={item.active}

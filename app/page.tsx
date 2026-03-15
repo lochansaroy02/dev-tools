@@ -55,7 +55,7 @@ export default function Dashboard() {
     return colors[index % colors.length];
   };
 
-  // Full merged dataset with added short descriptions
+
   const categories = [
     {
       title: "Developer Tools",
@@ -65,7 +65,7 @@ export default function Dashboard() {
         { title: "Regex Tester", desc: "Debug regex in real-time", link: "/developer/regex-tester", icon: <Code2 size={20} /> },
         { title: "JWT Decoder", desc: "Decode and inspect tokens", link: "/developer/jwt-decoder", icon: <ShieldCheck size={20} /> },
         { title: "Hash Generator", desc: "MD5, SHA-256 secure hashes", link: "/developer/hash-generator", icon: <Fingerprint size={20} /> },
-        { title: "UUID Generator", desc: "Generate unique identifiers", link: "/developer/uuid-generator", icon: <Hash size={20} /> },
+        { title: "UUID Generator", desc: "Generate unique identifiers", link: "/developer/uuid", icon: <Hash size={20} /> },
         { title: "Timestamp Converter", desc: "Epoch to human dates", link: "/developer/timestamp", icon: <Clock size={20} /> },
         { title: "Base64 Encode/Decode", desc: "Encode or decode strings", link: "/developer/base64", icon: <Binary size={20} /> },
         { title: "API Request Tester", desc: "Test REST API endpoints", link: "/developer/api-tester", icon: <Server size={20} /> }
